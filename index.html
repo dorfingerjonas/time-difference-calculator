@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zeitspannen Rechner</title>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="startScreen">
+
+        <header>
+            <h1><strong>Zeitspannen</strong>Rechner</h1>
+        </header>
+
+        <form>
+            <div id="startDate">
+                <h2>Anfangsdatum</h2>
+                <input type="date" id="startdateInput">
+            </div>
+
+            <div id="startDate">
+                <h2>Enddatum</h2>
+                <input type="date" id="enddateInput">
+            </div>
+
+        </form>
+
+        <p id="error">&nbsp;</p>
+
+        <div class="button" id="calculateDuration">
+            <span>Zeitspanne berechnen</span>
+        </div>
+
+        <div id="timeScreen">
+            <h1 id="title"></h1>
+
+            <div id="timeInOtherWords">
+                <h3>Mit anderen Worten...</h3>
+
+                <ul>
+                    <li id="percent"></li>
+                    <li id="weeks"></li>
+                    <li id="days"></li>
+                    <li id="hours"></li>
+                    <li id="minutes"></li>
+                    <li id="seconds"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

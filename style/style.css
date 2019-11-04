@@ -1,0 +1,89 @@
+body {
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* startScreen */
+#startScreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px -4px rgba(0,0,0,0.75);
+    margin-bottom: 4vmin;
+    position: relative;
+    left: 0;
+    top: 0;
+    background: #7bb7fa;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3vmin;
+}
+
+header strong {
+    color: #0000001a;
+}
+
+#startScreen h2 {
+    margin: 0 auto;
+}
+
+#startScreen form {
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#error {
+    color: red;
+    margin: 0 0 5vh 0;
+}
+
+#startScreen input {
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid #353535;
+}
+
+.button {
+    border: #7bb7fa 2px solid;
+    color: #7bb7fa;
+    padding: 1.5vmin;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.button:hover {
+    color: white;
+    background: #7bb7fa;
+}
+
+#timeScreen {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 5vh;
+    opacity: 0;
+    line-height: 3.5vmin;
+    transition: opacity 500ms ease-in-out;
+}
